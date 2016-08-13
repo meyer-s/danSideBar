@@ -28,7 +28,12 @@
 
     <script>
  $(document).ready( function() {
-    $('#container_id').fileTree({ root: '/danSideBar/wiki-master' }, function(file) {
+    $('#container_id').fileTree({ root: '/danSideBar/wiki-master/',
+    script: 'jqueryFileTree.aspx',
+    expandSpeed: 1000,
+    collapseSpeed: 1000,
+    multiFolder: true
+ }, function(file) {
         alert(file);
     });
 });
